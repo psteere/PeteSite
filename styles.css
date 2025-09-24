@@ -1,16 +1,27 @@
 body {
   background-color: #fbb51a;
-  background-image:
-    
   }
   
-  h1 {
+h1 {
     text-align: center;
-    
-  }
-  h2 {
-    text-align: justify;
-  }
-  h3 {
-    text-align: center;
-  }
+    display: flex;               /* use flexbox to align text + image */
+    justify-content: center;     /* center horizontally */
+    align-items: center;         /* align vertically */
+    gap: 10px;                   /* space between text and image */
+    font-size: 2em;              /* optional: bigger header text */
+}
+
+.headshot {
+    width: 200px;                /* same as before */
+    height: 200px;
+    border-radius: 50%;          /* optional: make it circular */
+    object-fit: cover;           /* keeps image proportion correct */
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: center;
+}
